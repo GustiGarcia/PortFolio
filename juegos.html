@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Juegos en Pygame</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #eee;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform .2s;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #76a9ff;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #76a9ff;
+            color: #000;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            background: #a5c4ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juegos desarrollados con Pygame</h1>
+
+    <div class="games-container">
+        <!-- Space Inn Vaders -->
+        <div class="card">
+            <h2>Space Inn Vaders</h2>
+            <p>Un shooter espacial clásico desarrollado con Pygame. Inspirado en Space Invaders pero con mi propio estilo.</p>
+            <a href="https://gustigarcia.itch.io/space-inn-vaders" target="_blank">Jugar / Descargar</a>
+        </div>
+
+        <!-- Pong Multiplayer -->
+        <div class="card">
+            <h2>Pong Multiplayer</h2>
+            <p>Versión multijugador del clásico Pong, creada desde cero con Pygame.</p>
+            <a href="https://gustigarcia.itch.io/pong-multiplayer" target="_blank">Jugar / Descargar</a>
+        </div>
+    </div>
+</body>
+</html>
