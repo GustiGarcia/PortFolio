@@ -1,0 +1,146 @@
+#card-games {
+    transition: transform 0.3s ease;
+}
+
+#card-games:hover {
+    transform: scale(1.03);
+}
+/* --- CONTENEDOR DE LAS CARDS --- */
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* --- CARD GENERAL --- */
+.card {
+    background: #f2efef;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform .2s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* --- TITULOS Y LINKS --- */
+.card h2 {
+    margin-top: 10px;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #76a9ff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #a5c4ff;
+}
+
+/* ---------------------------------------------------
+   🔥 SISTEMA DE PREVIEW GIF CON HOVER
+---------------------------------------------------- */
+
+/* Caja donde van las dos imágenes */
+.preview-box {
+    width: 300px;
+    height: 170px;          /* Ajustalo si querés */
+    margin: 0 auto 15px auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Imagen estática y GIF ocupan lo mismo */
+.preview-static,
+.preview-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+}
+
+/* GIF oculto por defecto */
+.preview-gif {
+    opacity: 0;
+}
+
+/* Cuando paso el mouse por la card, se muestra el GIF */
+.card:hover .preview-gif {
+    opacity: 1;
+}
+
+/* Y se oculta la imagen estática */
+.card:hover .preview-static {
+    opacity: 0;
+}
+
+.preview-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;        /* espacio entre imágenes */
+}
+
+/* ---------------------------------------
+   CARD LABURAR O JUGAR
+---------------------------------------- */
+
+.loj-card {
+    max-width: 650px;     /* más compacta */
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* fila de imágenes */
+.loj-preview-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* cajas de preview (más chicas que las normales) */
+.loj-preview-box {
+    width: 180px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* imágenes internas (usan tus clases existentes) */
+.loj-preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* botón compacto */
+.loj-btn {
+    display: inline-block;
+    background: #76a9ff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.loj-btn:hover {
+    background: #a5c4ff;
+}

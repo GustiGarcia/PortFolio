@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mis Juegos en Pygame</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #eee;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .games-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 10px;
-        }
-        .card {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            transition: transform .2s;
-        }
-        .card:hover {
-            transform: scale(1.03);
-        }
-        .card h2 {
-            margin-top: 0;
-            color: #76a9ff;
-        }
-        .card a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #76a9ff;
-            color: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .card a:hover {
-            background: #a5c4ff;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
+
 <body>
-    <h1>Juegos desarrollados con Pygame</h1>
+    <h1 class="text-center mt-3">Juegos desarrollados con Pygame</h1>
 
     <div class="games-container">
+
         <!-- Space Inn Vaders -->
         <div class="card">
+            <div class="preview-box">
+                <img src="images/nave_sheet.png" class="preview-static" alt="">
+                <img src="images/gif Space.gif" class="preview-gif" alt="">
+            </div>
+
             <h2>Space Inn Vaders</h2>
-            <p>Un shooter espacial clásico desarrollado con Pygame. Inspirado en Space Invaders pero con mi propio estilo.</p>
+            <p>Un shooter espacial clásico desarrollado con Pygame. Inspirado en Space Invaders pero con mi propio
+                estilo.</p>
             <a href="https://gustigarcia.itch.io/space-inn-vaders" target="_blank">Jugar / Descargar</a>
+            <a href="https://github.com/GustiGarcia/Arcade_pygame" target="_blank">Repositorio</a>
         </div>
 
         <!-- Pong Multiplayer -->
         <div class="card">
+            <div class="preview-box">
+                <img src="images/fondo_pong.jpg" class="preview-static" alt="">
+                <img src="images/gifpongs.gif" class="preview-gif" alt="">
+            </div>
+
             <h2>Pong Multiplayer</h2>
             <p>Versión multijugador del clásico Pong, creada desde cero con Pygame.</p>
             <a href="https://gustigarcia.itch.io/pong-multiplayer" target="_blank">Jugar / Descargar</a>
+            <a href="https://github.com/GustiGarcia/Arcade_pygame" target="_blank">Repositorio</a>
+
         </div>
+
+
+    </div>
+    <div class="card loj-card">
+        <div class="loj-preview-row">
+            <div class="loj-preview-box">
+                <img src="images/nueva_partida.jpg" class="preview-static" alt="">
+                <img src="images/caminata_LOJ.gif" class="preview-gif" alt="">
+            </div>
+
+            <div class="loj-preview-box">
+                <img src="images/fondo1.jpg" class="preview-static" alt="">
+                <img src="images/bicicleta.gif" class="preview-gif" alt="">
+            </div>
+        </div>
+
+        <h2>Laburar o Jugar</h2>
+        <p>Reversión de Paperboy + arcade: Pong, Space Inn Vaders, Asteroids, Tragamonedas</p>
+        <p>Realizado en Conjunto con Nahuel Ghilardi</p>
+
+        <a href="https://github.com/Nahuelito22/Laburar_o_Jugar" target="_blank" class="loj-btn">
+            Repositorio
+        </a>
+    </div>
+
+
     </div>
 </body>
+
 </html>
