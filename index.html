@@ -1,93 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio - Gustavo García</title>
+  </head>
+  <body>
+    <!-- Navbar para mejor navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-code-slash me-2"></i>Gustavo García
+        </a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link text-white" href="#about">Sobre mí</a>
+          <a class="nav-link text-white" href="#projects">Proyectos</a>
+          <a class="nav-link text-white" href="#contact">Contacto</a>
+        </div>
+      </div>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>PortFolio</title>
-</head>
-
-<body>
-    <h1 class="text-center mt-3">Bienvenidos</h1>
+    <!-- Título principal -->
+    <header class="container mt-3 mb-5">
+      <h1 class="text-center display-4 fw-bold">¡Bienvenido a mi Portfolio!</h1>
+      <p class="text-center text-muted lead">
+        Desarrollador en formación especializado en Python y Flask
+      </p>
+    </header>
 
     <!-- SOBRE MÍ -->
     <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Imagen -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img
+              src="images/cut.jpg"
+              alt="Foto de Gustavo"
+              class="img-fluid rounded-circle shadow"
+              style="max-width: 250px; border: 5px solid white"
+            />
+          </div>
 
-                <!-- Imagen -->
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="images/cut.jpg" alt="Foto de Gustavo" class="img-fluid rounded-circle"
-                        style="max-width:200px;">
-                </div>
+          <!-- Texto -->
+          <div class="col-md-8">
+            <h2 class="mb-4 display-5 fw-bold">Sobre mí</h2>
+            <p class="lead mb-4">
+              Soy Gustavo García, desarrollador en formación con experiencia en
+              Python, Flask, HTML, CSS y Pygame. Me apasiona crear proyectos
+              prácticos, comprender cómo funcionan las cosas desde cero y
+              mejorar constantemente mis habilidades. Disfruto trabajar en
+              aplicaciones web, videojuegos simples y soluciones creativas que
+              integren lógica y diseño.
+            </p>
 
-                <!-- Texto -->
-                <div class="col-md-8">
-                    <h2 class="mb-3">Sobre mí</h2>
-                    <p id="bio-text" class="lead">
-                        Soy Gustavo García, desarrollador en formación con experiencia en Python, Flask, HTML, CSS y
-                        Pygame. Me apasiona crear proyectos prácticos, comprender cómo funcionan las cosas desde cero y
-                        mejorar constantemente mis habilidades. Disfruto trabajar en aplicaciones web, videojuegos
-                        simples y soluciones creativas que integren lógica y diseño.
-                    </p>
-
-                    <div class="mt-3">
-                        <span class="badge bg-primary me-1">Python</span>
-                        <span class="badge bg-primary me-1">Flask</span>
-                        <span class="badge bg-primary me-1">HTML</span>
-                        <span class="badge bg-primary me-1">CSS</span>
-                        <span class="badge bg-primary me-1">Pygame</span>
-                        <span class="badge bg-primary me-1">Git</span>
-                    </div>
-
-                    <div class="mt-4">
-                        <a href="assets/Gustavo_Garcia_CV.pdf" class="btn btn-outline-primary me-2"
-                            target="_blank">Descargar CV</a>
-                        <a href="#contact" class="btn btn-primary">Contactame</a>
-                    </div>
-                </div>
-
+            <!-- Tecnologías -->
+            <div class="mb-4">
+              <h5 class="mb-3">Tecnologías:</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary py-2 px-3">Python</span>
+                <span class="badge bg-primary py-2 px-3">Flask</span>
+                <span class="badge bg-primary py-2 px-3">HTML</span>
+                <span class="badge bg-primary py-2 px-3">CSS</span>
+                <span class="badge bg-primary py-2 px-3">Pygame</span>
+                <span class="badge bg-primary py-2 px-3">Git</span>
+                <span class="badge bg-primary py-2 px-3">Bootstrap</span>
+              </div>
             </div>
+
+            <!-- Botones -->
+            <div class="mt-4">
+              <a
+                href="assets/GusGarciaCV.pdf"
+                class="btn btn-primary btn-lg me-3"
+                target="_blank"
+              >
+                <i class="bi bi-download me-2"></i>Descargar CV
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-envelope me-2"></i>Contáctame
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- CARD DE PYGAME -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4 text-center">Proyectos Destacados</h2>
+    <!-- PROYECTOS DESTACADOS -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="mb-5 text-center display-5 fw-bold">Proyectos Destacados</h2>
 
-            <div id="card-games" class="row justify-content-center  ">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <img src="images/pygame.png" class="card-img-top mx-auto d-block" style="width: 300px;"
-                            alt="Proyectos Pygame">
-                        <div class="card-body">
-                            <h5 class="card-title">Juegos en Pygame</h5>
-                            <p class="card-text">Mirá mis juegos creados con Python y Pygame, con GIFs y opciones para
-                                jugarlos online.</p>
-                            <a href="juegos.html" class="btn btn-primary w-100">Ver Juegos</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <img src="images/flask.jpg" class="card-img-top mx-auto d-block" style="width: 250px; height: 300px;"
-                            alt="Proyectos Pygame">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyectos python/Flask</h5>
-                            <p class="card-text">Mirá los proyectos que he realizado en conjunto o solitario con Python , Flask y otras Herramientas</p>
-                            <a href="proyectosFlask.html" class="btn btn-primary w-100">Ver Proyectos</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row justify-content-center g-4">
+          <!-- Card PyGame -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-img-top bg-light text-center py-4">
+                <img
+                  src="images/pygame.png"
+                  class="img-fluid"
+                  style="max-height: 180px"
+                  alt="Proyectos Pygame"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title mb-3">
+                  <i class="bi bi-controller text-primary me-2"></i>Juegos en
+                  Pygame
+                </h4>
+                <p class="card-text flex-grow-1">
+                  Mirá mis juegos creados con Python y Pygame, con GIFs y
+                  opciones para jugarlos online, también puedes ver los
+                  repositorios.
+                </p>
+                <a href="juegos.html" class="btn btn-primary mt-auto">
+                  <i class="bi bi-eye me-2"></i>Ver Juegos
+                </a>
+              </div>
             </div>
+          </div>
+
+          <!-- Card Flask -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-img-top bg-light text-center py-4">
+                <img
+                  src="images/flask.jpg"
+                  class="img-fluid"
+                  style="max-height: 180px"
+                  alt="Proyectos Flask"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title mb-3">
+                  <i class="bi bi-flower1 text-success me-2"></i>Proyectos
+                  Python/Flask
+                </h4>
+                <p class="card-text flex-grow-1">
+                  Mirá los proyectos que he realizado en conjunto o solitario
+                  con Python, Flask y otras herramientas.
+                </p>
+                <a href="proyectosFlask.html" class="btn btn-success mt-auto">
+                  <i class="bi bi-eye me-2"></i>Ver Proyectos
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Otros -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-img-top bg-light text-center py-4">
+                <img
+                  src="images/otros.png"
+                  class="img-fluid"
+                  style="max-height: 180px"
+                  alt="Otros Proyectos"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title mb-3">
+                  <i class="bi bi-folder2-open text-warning me-2"></i>Otros
+                  Proyectos
+                </h4>
+                <p class="card-text flex-grow-1">
+                  Proyectos de etapas tempranas, algunos en desarrollo y otros
+                  han sido parte del aprendizaje para convertirme en
+                  desarrollador.
+                </p>
+                <a href="otros.html" class="btn btn-warning text-white mt-auto">
+                  <i class="bi bi-eye me-2"></i>Ver Proyectos
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-</body>
+    <!-- CONTACTO (sección básica) -->
+    <section id="contact" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center mb-4 display-5 fw-bold">Contacto</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="lead mb-4">
+              ¿Te interesa colaborar o tienes alguna pregunta?
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+              <a
+                href="mailto:gg.prof.ef@gmail.com"
+                class="btn btn-light btn-lg"
+              >
+                <i class="bi bi-envelope me-2"></i>Email
+              </a>
+              <a
+                href="https://github.com/GustiGarcia"
+                target="_blank"
+                class="btn btn-outline-light btn-lg"
+              >
+                <i class="bi bi-github me-2"></i>GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/gusgarciadev"
+                target="_blank"
+                class="btn btn-outline-light btn-lg"
+              >
+                <i class="bi bi-linkedin me-2"></i>LinkedIn
+              </a>
+              <!-- Solo el botón de WhatsApp para la sección contacto -->
+              <a
+                href="https://wa.me/5492613469521"
+                target="_blank"
+                class="btn btn-success btn-lg"
+              >
+                <i class="bi bi-whatsapp me-2"></i>Chatear por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="py-3 bg-primary text-white text-center">
+      <div class="container">
+        <p class="mb-0">© 2025 Gustavo García - Desarrollador Python/Flask</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Icons y JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
